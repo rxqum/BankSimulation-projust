@@ -16,11 +16,11 @@ def bankuser():
         bankuser()
 def withdraw():
     askhowmuch = float(input("How much do you want to withdraw?: $"))
-    if askhowmuch >= balls[0]:
+    if askhowmuch >= balances[0]:
         print("You cannot withdraw more than you have.")
         print()
     elif askhowmuch >= 0:
-        balls[0] -= askhowmuch
+        balances[0] -= askhowmuch
         print("Success!")
         print()
         return
@@ -30,7 +30,7 @@ def withdraw():
 def sendmoney():
     askhowmuch = float(input("How much do you want to receive?: $"))
     if askhowmuch >= 0:
-        balls[0] += askhowmuch
+        balances[0] += askhowmuch
         print("Success!")
         print()
         return
@@ -38,7 +38,7 @@ def sendmoney():
         print("Something went wrong.")
 
 def viewstat():
-    print(f"Your ballance: ${balls[0]}")
+    print(f"Your ballance: ${balances[0]}")
 
 def menu():
     while True:
