@@ -1,0 +1,1 @@
+This is a txt mini-game that simulates bank activity. First of all you have to log in, after that you can withdraw your money or receive money. For now it only supports one user. To start it, you just need to click "Play", then you will get all the instructions.
